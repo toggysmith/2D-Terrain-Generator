@@ -10,13 +10,6 @@ func get_brightness_in_range(noise_value, range_lower_bound, range_upper_bound):
 	return stepified_brightness
 
 func get_color_from_noise_value(noise_value):
-	# Noise Value Range: [-1, 1]
-	#   Water : <=0.2
-	#   Sand  : <=0.275
-	#   Grass : <=0.8
-	#   Rock  : <=0.95
-	#   Snow  : <=1.0
-	
 	noise_value += 1.0
 	noise_value /= 2.0
 	
